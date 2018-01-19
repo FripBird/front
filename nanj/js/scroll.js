@@ -4,6 +4,9 @@ $(function () {
     var i = $(".btn_nav").index(this)
     var p = $(".content").eq(i).offset().top;
     $('html,body').animate({ scrollTop: p }, 'fast');
+    if($(".btn_menu").css("display")=="flex"){
+      $(".navbar").css("display","none");
+    }
     return false;
   });
 
