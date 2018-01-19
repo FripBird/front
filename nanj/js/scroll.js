@@ -13,6 +13,9 @@ $(function () {
   //ページ上部へ戻る
   $(".btn_top").click(function () {
     $('html,body').animate({ scrollTop: 0 }, 'fast');
+    if($(".btn_menu").css("display")=="flex"){
+      $(".navbar").css("display","none");
+    }
     return false;
   });
 
