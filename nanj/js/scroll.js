@@ -2,10 +2,17 @@ $(function () {
   //ページ内スクロール
   $(".btn_nav").click(function () {
     var i = $(".btn_nav").index(this)
+<<<<<<< HEAD
     var p = $(".content").eq(i).offset().top;
     $('html,body').animate({ scrollTop: p }, 'fast');
     if($(".btn_menu").css("display")=="flex"){
       $(".navbar").css("display","none");
+=======
+    var p = $(".content").eq(i).offset().top - parseInt($(".header_container").css("height"));
+    $('html,body').animate({ scrollTop: p }, 'fast');
+    if ($(".btn_menu").css("display") == "flex") {
+      $(".navbar").css("display", "none");
+>>>>>>> compactNav
     }
     return false;
   });
@@ -13,14 +20,20 @@ $(function () {
   //ページ上部へ戻る
   $(".btn_top").click(function () {
     $('html,body').animate({ scrollTop: 0 }, 'fast');
+<<<<<<< HEAD
     if($(".btn_menu").css("display")=="flex"){
       $(".navbar").css("display","none");
+=======
+    if ($(".btn_menu").css("display") == "flex") {
+      $(".navbar").css("display", "none");
+>>>>>>> compactNav
     }
     return false;
   });
 
 });
 
+<<<<<<< HEAD
 
 //ナビゲーションメニューを上部に固定する
 $(function () {
@@ -40,6 +53,8 @@ $(function () {
   $(window).on("load scroll resize", floatMenu);
 });
 
+=======
+>>>>>>> compactNav
 $(function () {
   $(".btn_menu").click(function () {
     if ($(".navbar").is(":hidden")) {
