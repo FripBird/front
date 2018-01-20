@@ -124,7 +124,7 @@ nav {
   flex: 1 1 auto;
   text-align: center;
   padding: 10px;
-  background: rgba(86, 110, 179, 0.7);
+  background: rgb(86, 110, 179);
 }
 
 .navbar li:hover {
