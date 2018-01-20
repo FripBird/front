@@ -195,6 +195,11 @@ nav {
   margin: 10px;
 }
 
+.roadmap{
+  max-width: 720px;
+  width: 100%;
+}
+
 .sns_container {
   display: -webkit-box;
   display: -ms-flexbox;
